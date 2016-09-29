@@ -11,6 +11,10 @@ set encoding=utf-8
 set nu
 
 
+" Allow backspacing everything in insert mode
+set backspace=indent,eol,start
+
+
 "show powerline the whole time
 set laststatus=2
 let g:airline_powerline_fonts = 1
@@ -87,7 +91,7 @@ set background=dark
 colorscheme solarized
 call togglebg#map("<F5>")
 
-let g:ycm_python_binary_path = '/Users/fonz/anaconda/bin/python'
+let g:ycm_python_binary_path = 'python'
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
