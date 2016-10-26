@@ -21,7 +21,7 @@ set backspace=indent,eol,start
 set laststatus=2
 let g:airline_powerline_fonts = 1
 
-set clipboard=unnamed
+"set clipboard=unnamed
 
 call vundle#begin()
 
