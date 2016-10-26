@@ -10,7 +10,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 set encoding=utf-8
 set nu
 set nowrap
-set pastetoggle=<F2>
 
 " Allow backspacing everything in insert mode
 set backspace=indent,eol,start
