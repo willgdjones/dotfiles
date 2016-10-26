@@ -10,7 +10,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 set encoding=utf-8
 set nu
 set nowrap
-
+set pastetoggle=<F2>
 
 " Allow backspacing everything in insert mode
 set backspace=indent,eol,start
@@ -20,7 +20,7 @@ set backspace=indent,eol,start
 set laststatus=2
 let g:airline_powerline_fonts = 1
 
-set clipboard=unnamed
+"set clipboard=unnamed
 
 call vundle#begin()
 
@@ -70,21 +70,28 @@ set foldlevel=99
 
 let g:SimpylFold_docstring_preview=1
 
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set textwidth=79
+set expandtab
+set autoindent
+set fileformat=unix
 
 
-au BufNewFile,BufRead *.py:
-            \ set tabstop=2 |
-            \ set softtabstop=2 |
-            \ set shiftwidth=2 |
-            \ set textwidth=79 |
-            \ set expandtab |
-            \ set autoindent |
-            \ set fileformat=unix
+"au BufNewFile,BufRead *.py:
+            "\ set tabstop=2 |
+            "\ set softtabstop=2 |
+            "\ set shiftwidth=2 |
+            "\ set textwidth=79 |
+            "\ set expandtab |
+            "\ set autoindent |
+            "\ set fileformat=unix
 
-au BufNewFile,BufRead *.js, *.html, *.css:
-            \ set tabstop=2 |
-            \ set softtabstop=2 |
-            \ set shiftwidth=2
+"au BufNewFile,BufRead *.js, *.html, *.css:
+            "\ set tabstop=2 |
+            "\ set softtabstop=2 |
+            "\ set shiftwidth=2
 
 "au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
